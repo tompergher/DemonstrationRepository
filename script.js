@@ -1,12 +1,12 @@
 function handleKeyPress(ev) {
-    if (ev.code === "space") {
-        const player = document.querySelector("#player")
+    const player = document.querySelector("#player")
+    if (ev.code === "Space") {
         player.setAttribute("cx", 100*Math.random())
         player.setAttribute("cy", 100*Math.random())
     } else if (ev.key === "r") {
-        player.settAttribute("fill", "red")
+        player.setAttribute("fill", "red")
     } else if (ev.key === "g") {
-        player.settAttribute("fill", "green")
+        player.setAttribute("fill", "green")
     }
 }
 window.onkeydown = handleKeyPress
